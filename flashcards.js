@@ -1,4 +1,7 @@
-// nice-looking floated flash messages
+/**
+ * Nice-looking floated flash messages
+ * More on https://github.com/mitio/jquery-flashcards
+ */
 var freeFlashCards = [];
 
 function flash(o) {
