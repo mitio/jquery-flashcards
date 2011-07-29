@@ -23,6 +23,11 @@ function flash(o) {
 			.appendTo('body');
 
 		$card.click(function () {
+			if ($card.data('fc-timer')) {
+				clearTimeout($card.data('fc-timer'));
+				$card.data('fc-timer', undefined);
+			}
+
 			$card.fadeOut('fast', function () {
 				freeFlashCards.push($card);
 			});
@@ -43,7 +48,8 @@ function flash(o) {
 	}).removeClass('fc-positioning').show();
 
 	// fade out after o.visibleFor ms
-	setTimeout(function () {
+	var timer = setTimeout(function () {
 		$card.trigger('click');
 	}, o.visibleFor);
+	$card.data('fc-timer', timer);
 }
