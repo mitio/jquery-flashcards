@@ -22,7 +22,7 @@ Note that the duration, specified by the `visibleFor` parameter is in millisecon
 
 ## Bugs and feature-requests
 
-Please use the [Github issue tracker](http://github.com/mitio/js-flashcards/issues) for this project.
+Please use the [Github issue tracker](http://github.com/mitio/jquery-flashcards/issues) for this project.
 
 ## Patches
 
